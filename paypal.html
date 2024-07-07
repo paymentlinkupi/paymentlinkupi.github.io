@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Open PayPal</title>
+    <script type="text/javascript">
+        function openPayPal() {
+            var url = "paypal://paypalme/gracewithus";
+            window.location.href = url;
+            setTimeout(function() {
+                window.location.href = "https://www.paypal.com/paypalme/gracewithus";
+            }, 1000);
+        }
+    </script>
+</head>
+<body onload="openPayPal()">
+    <p>Redirecting to PayPal...</p>
+</body>
+</html>
